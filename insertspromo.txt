@@ -1,0 +1,9 @@
+INSERT INTO `dbshop`.`tblpromo` (`idpromo`, `strDescripcion`, `strURL`) VALUES 
+('1', '../promo/data1/images/promo1.jpg', 'http://google.es'), 
+('2', '../promo/data1/images/promo2.jpg', 'http://google.es'),
+('3', '../promo/data1/images/promo3.jpg', 'http://google.es'),
+('4', '../promo/data1/images/promo4.jpg', 'http://google.es'),
+('5', '../promo/data1/images/promo5.jpg', 'http://google.es'),
+('6', '../promo/data1/images/promo6.jpg', 'http://google.es'),
+('7', '../promo/data1/images/promo7.jpg', 'http://google.es'),
+('8', '../promo/data1/images/promo8.jpg', 'http://google.es');

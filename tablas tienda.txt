@@ -1,0 +1,88 @@
+-- ----------------------------
+-- Table structure for tblcategoria
+-- ----------------------------
+CREATE TABLE `tblcategoria` (
+  `idCategoria` int(11) NOT NULL AUTO_INCREMENT,
+  `strDescripcion` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`idCategoria`)
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+
+-- ----------------------------
+-- Table structure for tblproducto
+-- ----------------------------
+CREATE TABLE `tblproducto` (
+  `idProducto` int(11) NOT NULL AUTO_INCREMENT,
+  `strNombre` varchar(100) DEFAULT NULL,
+  `strSEO` varchar(100) DEFAULT NULL,
+  `dblPrecio` double DEFAULT NULL,
+  `intEstado` int(11) DEFAULT NULL,
+  `intCategoria` int(11) DEFAULT NULL,
+  `strImagen` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`idProducto`)
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
+
+-- ----------------------------
+-- Table structure for tblusuario
+-- ----------------------------
+CREATE TABLE `tblusuario` (
+  `idUsuario` int(11) NOT NULL AUTO_INCREMENT,
+  `strNombre` varchar(50) DEFAULT NULL,
+  `strEmail` varchar(100) DEFAULT NULL,
+  `intActivo` int(11) DEFAULT NULL,
+  `strPassword` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`idUsuario`)
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+
+-- ----------------------------
+-- Table structure for tbladmin
+-- ----------------------------
+CREATE TABLE `tbladmin` (
+  `idadmin` int(11) NOT NULL AUTO_INCREMENT,
+  `strNombre` varchar(50) DEFAULT NULL,
+  `strEmail` varchar(100) DEFAULT NULL,
+  `intActivo` int(11) DEFAULT NULL,
+  `strPassword` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`idadmin`)
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+
+-- ----------------------------
+-- Records 
+-- ----------------------------
+INSERT INTO `tblcategoria` VALUES ('13', 'Audi');
+INSERT INTO `tblcategoria` VALUES ('6', 'BMW');
+INSERT INTO `tblcategoria` VALUES ('1', 'Toyota');
+
+
+INSERT INTO `tblusuario` VALUES ('', 'user', 'user@user.user', '1', 'user');
+INSERT INTO `tblusuario` VALUES ('', 'test', 'test@test.test', '1', 'test');
+INSERT INTO `tblusuario` VALUES ('', 'demo', 'demo@demo.demo', '1', 'demo');
+INSERT INTO `tbladmin` VALUES ('', 'admin', 'user@user.user', '1', 'admin');
+INSERT INTO `tbladmin` VALUES ('', 'admin', 'admin@admin.admin', '1', 'admin');
+
+INSERT INTO `dbshop`.`tblproducto` (`idProducto`, `strNombre`, `strSEO`, `dblPrecio`, `intEstado`, `intCategoria`, `strImagen`) VALUES (NULL, 'bmw m3 2014', 'user', '25000', '1', '6', 'bmw1.jpg');
+
+INSERT INTO `dbshop`.`tblproducto` (`idProducto`, `strNombre`, `strSEO`, `dblPrecio`, `intEstado`, `intCategoria`, `strImagen`) VALUES (NULL, 'bmw m3 black', 'user', '25000', '1', '6', 'bmw2.jpg');
+
+INSERT INTO `dbshop`.`tblproducto` (`idProducto`, `strNombre`, `strSEO`, `dblPrecio`, `intEstado`, `intCategoria`, `strImagen`) VALUES (NULL, 'bmw m3 black', 'user', '22000', '1', '6', 'bmw2.jpg');
+
+INSERT INTO `dbshop`.`tblproducto` (`idProducto`, `strNombre`, `strSEO`, `dblPrecio`, `intEstado`, `intCategoria`, `strImagen`) VALUES (NULL, 'bmw m3 red', 'user', '33000', '1', '6', 'bmw3.jpg');
+
+INSERT INTO `dbshop`.`tblproducto` (`idProducto`, `strNombre`, `strSEO`, `dblPrecio`, `intEstado`, `intCategoria`, `strImagen`) VALUES (NULL, 'toyota corolla 2015', 'user', '37000', '1', '1', 'toyota1.jpg');
+
+INSERT INTO `dbshop`.`tblproducto` (`idProducto`, `strNombre`, `strSEO`, `dblPrecio`, `intEstado`, `intCategoria`, `strImagen`) VALUES (NULL, 'toyota sport 2015', 'demo', '45000', '1', '1', 'toyota2.jpg');
+
+INSERT INTO `dbshop`.`tblproducto` (`idProducto`, `strNombre`, `strSEO`, `dblPrecio`, `intEstado`, `intCategoria`, `strImagen`) VALUES (NULL, 'Audi black', 'demo', '38000', '1', '13', 'audi1.jpg');
+
+INSERT INTO `dbshop`.`tblproducto` (`idProducto`, `strNombre`, `strSEO`, `dblPrecio`, `intEstado`, `intCategoria`, `strImagen`) VALUES (NULL, 'Audi black A7', 'test', '29000', '1', '13', 'audi2.jpg');
+
+INSERT INTO `dbshop`.`tblpromo` (`idpromo`, `strDescripcion`, `strURL`) VALUES 
+('1', '../promo/data1/images/promo1.jpg', 'http://google.es'), 
+('2', '../promo/data1/images/promo2.jpg', 'http://google.es'),
+('3', '../promo/data1/images/promo3.jpg', 'http://google.es'),
+('4', '../promo/data1/images/promo4.jpg', 'http://google.es'),
+('5', '../promo/data1/images/promo5.jpg', 'http://google.es'),
+('6', '../promo/data1/images/promo6.jpg', 'http://google.es'),
+('7', '../promo/data1/images/promo7.jpg', 'http://google.es'),
+('8', '../promo/data1/images/promo8.jpg', 'http://google.es');
+
+

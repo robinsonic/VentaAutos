@@ -1,0 +1,154 @@
+ /*body#resultados {float: center; margin-left: 10%; }*/
+ ul.egmenu {  
+    /*background: #333; */
+	/*background: #ccccff;*/
+	
+    height: 100px;
+    width: 100%; 
+}
+
+ul.egmenu > li { 
+    float: left; 
+    position: relative;  
+}
+
+ul.egmenu ul {
+
+    background: #444; 
+    display: none; 
+    position: absolute;
+    left: 0; top: 100%;
+}
+
+ul.egmenu a { 
+    color: grey;
+    cursor: pointer; 
+    display: block; 
+    /*color: white;*/ 
+    line-height: 30px; 
+    padding: 0 10px; 
+}
+
+ul.egmenu li { list-style: none; }
+
+ul.egmenu li:hover { background: #555;  }
+ul.egmenu li:hover ul { display: block;  }
+
+@media screen and ( max-width: 780px) {
+    ul.egmenu {  height: auto; width: 520px; position: relative;}
+	ul.egmenu a { color: white;}
+	ul.egmenu {background: #333;}
+	/*ul.egmenu {  width: 520px; }*/
+	#resultadosTabla{  float: right; position: relative;  width:520px; /*left: 20px;*/ right: 34%; }
+	.myform{  float: center; position: relative;  width:520px; /*left: 20px;*/ right: 20%; }
+	.feature{  float: right;  position: relative;  width:520px;  /*right: 34%; */ }
+	table {width: 500px; right: 0px;}
+	/*table{  float: left; position: relative;  width:520px; /*left: 20px;*/ /*right: 30%; }*/
+	ul.egmenu {  text-align: center; }
+	
+	#navBar {width: 520px; float: left;  position: relative; left: 10px;}
+	#sectionLinks{float: center-left;  width: 20px; left: 200px; position: relative; }
+	#userLinks{float: center-left;  width: 200px; left: 1px; position: relative; }
+	
+    ul.egmenu > li {  float: none; width: 100%; }
+    ul.egmenu a { line-height: 40px; }
+    ul.egmenu ul { position: relative; }
+	
+	
+       #breadCrumb {
+            display: block;
+			text-align: center;
+			font-weight: bold;
+			font-size: 14px;
+            /*background-color: #333;*/
+			height: 20px;
+            width: 505px;
+			float: right;
+			left: 6px;
+            position: relative;
+        }
+       
+}
+
+
+@media only screen and (max-width: 480px) {
+    ul.egmenu {  height: auto; width: 340px; position: relative; right: 0%;}
+	ul.egmenu a { color: white;}
+	/*ul.egmenu {  width: 360px; }*/
+	/*table{  float: right; position: relative;  width:365px;  left: 12px; }*/
+	#resultadosTabla{  float: right;  position: relative;  width:360px;  left: -70px; }
+	#stylized{  float: center; position: relative;  width:220px; /*left: 20px;*/ right: 16%; }
+	.small{  float: center; position: relative;  width:26px; /*left: 20px;*/ right: -6%; }
+	#sub{  float: center; position: relative;  width:2px; /*left: 20px;*/ right: 46%; }
+	.feature{  float: right;  position: relative;  width:360px;  left: 10px; }
+	.feature>h1 {float: center-left; margin-left:18px; }
+	.feature>h2 {float: center-left; margin-left:18px;}
+	table {width: 340px; left: 10px;}
+	ul.egmenu {  text-align: center; }
+	
+	#navBar {width: 340px; float: left;  position: relative; right: -6%;}
+	#sectionLinks{float: left;  width: 20px; left: 110px; position: relative; }
+	#userLinks{float: center-left; width: 60px; left: 1px; position: relative; }
+	#userForm{float: left; width: 20px; left: 50px; position: relative; }
+	
+    ul.egmenu > li {  float: none; width: 100%; }
+    ul.egmenu a { line-height: 40px; }
+    ul.egmenu ul { position: relative; }
+	
+	
+       #breadCrumb {
+            display: block;
+			text-align: center;
+			font-weight: bold;
+			font-size: 14px;
+            background-color: #333;
+			height: 20px;
+            width: 325px;
+			float: right;
+			margin-right: 20px;
+            position: relative;
+        }
+       
+}
+
+#slider{
+position: relative;
+float: top;
+margin-top: 0px;
+left:0px;
+}
+
+@media all and (min-width: 481px) {
+    ul.egmenu {  height: auto; }
+    ul.egmenu li:hover { background: #555;  }
+    ul.egmenu li:hover ul { display: block;  }
+	
+	
+}
+
+@media all and (max-width: 1980px) {
+    ul.egmenu {  height: auto; }
+    ul.egmenu > li {  float: none; width: 100%; }
+    ul.egmenu a { line-height: auto; }
+    /*table{float: left; position: relative; right: 25%;}*/
+	
+	#promos{position:relative; float:left;}
+	.lugar{position:relative; float:left;}
+	.lugar>p{position:relative; float:left;}
+	.map{position:relative; float:right;}
+}
+
+$('.has-sub').click( function(e) {
+    e.preventDefault();
+    $(this).parent().toggleClass('tap');
+});
+
+@media all and (max-width: 480px) {
+    ul.egmenu {  height: auto; }
+    ul.egmenu > li {  float: none; width: 100%; }
+    ul.egmenu a { line-height: 100px; }
+    ul.egmenu ul { position: relative; }
+
+    ul.egmenu li.tap { background: #555;  }
+    ul.egmenu li.tap ul { display: block;  }
+}
